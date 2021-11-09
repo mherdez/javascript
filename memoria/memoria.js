@@ -3,8 +3,8 @@
    let memoria   = [];
    let turno1    = false;
    let turno2    = false;
-   let verCarta1 = '';
-   let verCarta2 = '';
+   let verCarta1 = document.img;
+   let verCarta2 = document.img;
    let pares     = 0;
    let posicion1 = 0;
    let intentos  = 0
@@ -37,11 +37,7 @@
 
    const creaCarta = () => {
       for (let row = 1; row <= 3; row++) {
-         const divRow = document.createElement('div');
-         divRow.classList.add('row');
          for (let col = 1; col <= 6; col++) {
-            const divCol = document.createElement('div');
-            divCol.classList.add('col');
 
             const posicion = `${row}${col}`;
             const carta = memoria.pop()
@@ -51,9 +47,7 @@
             img.setAttribute('onclick', `mostrarCarta('${posicion}','${carta}')`);
             img.src = `./assets/cartas/grey_back.png`
 
-            divCol.append(img);
-            divRow.append(divCol);
-            container.append(divRow);
+            container.append(img)
          }
       }
    }
@@ -73,6 +67,8 @@
             if (verCarta1.src === verCarta2.src) {
                verCarta1.src = ``;
                verCarta2.src = ``;
+               verCarta1.removeAttribute('onclick');
+               verCarta2.removeAttribute('onclick');
                pares++;
                if (pares === 9) {
                   let nuevoJuego = confirm(`Felicidades, has ganado!, Lo hiciste en ${intentosHTML.textContent} intentos\n\nQuieres volver a jugar?`);
@@ -86,7 +82,7 @@
                verCarta1.src = `./assets/cartas/grey_back.png`;
                verCarta2.src = `./assets/cartas/grey_back.png`;
             }
-         }, 1000)
+         }, 500)
          turno1 = false;
          turno2 = false;
          intentos++;

@@ -2,23 +2,21 @@
 
 body {
    background-color: rgb(55, 112, 112);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+   user-select: none;
 }
 
-.container {
-   display: wrap;
-   justify-content: center;
-   align-items: center;
-   width: 60%;
+#container {
+   margin: 50px auto;
+   max-width: 90%;
+   max-height: 90vh;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   gap: 20px;
 }
 
 h1 {
    text-align: center;
-   margin: 0;
-   margin-bottom: 5px;
+   margin-top: 50px;
    font-family: 'Raleway';
    font-weight: 700;
    font-size: 40px;
@@ -27,14 +25,9 @@ h1 {
    text-shadow: 2px 2px 5px black;
 }
 
-.row{
-   display: grid;
-   grid-template-columns: repeat(6, 1fr);
-   grid-template-rows: 220px;
-   column-gap: 40px;
-   padding: 10px;
-}
-
-.col img{
+img{
    width: 145px;
+   min-height: 225px;
+   border: 1px solid gray;
+   border-radius: 10px;
 }

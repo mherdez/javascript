@@ -1,0 +1,111 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  box-sizing: border-box;
+  /* evita seleccionar el texto */
+  user-select: none;
+  /* -webkit-user-select: none;  
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none; */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(0, 90, 0);
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+h1,
+h3 {
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+}
+
+.title {
+  background-color: black;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px rgba(131, 127, 127, 0.253);
+  font-size: 35px;
+}
+
+.table {
+  margin: 0px 30px 0px 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+.mx-15 {
+  margin: 0 15px;
+}
+
+.btn:hover {
+  box-shadow: 0 7px 10px rgba(48, 47, 47, 0.671);
+  cursor: pointer;
+}
+
+.bg-red {
+  background-color: rgb(241, 48, 48);
+}
+
+.bg-red:hover {
+  background-color: rgb(202, 13, 13);
+}
+
+.bg-blue {
+  background-color: rgb(0, 110, 255);
+}
+
+.bg-blue:hover {
+  background-color: rgb(7, 95, 209);
+}
+
+.bg-blue-disabled, .bg-blue-disabled:hover {
+  background-color: rgb(0, 46, 105);
+  box-shadow: none;
+  color: grey;
+  cursor: auto;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+#cardsPlayer,
+#cardsComputer {
+  margin-bottom: 15px;
+  min-height: 245px;
+}
+
+.card {
+  width: 150px;
+  height: 240px;
+  position: relative;
+  left: 120px;
+  margin-left: -110px;
+}
