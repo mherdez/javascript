@@ -6,7 +6,7 @@ const colors = ['red', 'green', 'blue', 'coral', 'yellow', 'indigo'];
 let setBackground;
 let stop = false;
 let c = 0;
-let co = ''; 
+let co = '';  
 
 const h1 = document.querySelector('h1');
 const btn = document.querySelector('.btn');
