@@ -1,4 +1,4 @@
-/* 
+/*
 html {
    user-select: none;
 } */
@@ -30,7 +30,7 @@ h1 {
 .background {
    padding: 20px 10px 20px 10px;
    border-radius: 20px;
-   max-height: 212px;
+   max-height: 412px;
    overflow-y: auto;
    margin-bottom: 30px;
 }

@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Blackjack</title>
-   <link rel="stylesheet" href="style.css">
+   <title>Blackjack.</title>
 </head>
-
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+<link rel="stylesheet" href="style.css">
 <body>
-   <div class="container">
-      <h1 class="title">Backjack</h1>
-   </div>
+
    <div class="navbar">
-      <button id="btnNuevo"   class="btn bg-red">Nuevo juego</button>
-      <button id="btnPedir"   class="btn bg-blue mx-15">Pedir Carta</button>
+      <h1>Blackjack</h1>
+   </div>
+   <div class="buttons">
+      <button id="btnNuevoJuego" class="btn bg-red">Nuevo juego</button>
+      <button id="btnPedirCarta" class="btn bg-blue" >Pedir carta</button>
       <button id="btnDetener" class="btn bg-blue">Detener</button>
    </div>
    <div class="table">
-      <div id="player">
+      <div class="jugador">
          <h3>Jugador - <small>0</small></h3>
-         <div id="cardsPlayer"></div>
+         <div class="cartasJugador">
+            <!-- <img src="./assets/cartas/AC.png" alt=""> -->
+         </div>
       </div>
-      <div id="computer">
+      <div class="computadora">
          <h3>Computadora - <small>0</small></h3>
-         <div id="cardsComputer"></div>
+         <div class="cartasComputadora">
+            <!-- <img src="./assets/cartas/10H.png" alt=""> -->
+         </div>
       </div>
    </div>
+   <div class="mensaje">
+      <!-- <img src="https://media.giphy.com/media/lnyPptAfGwHeTdoQDk/giphy-downsized-large.gif" alt="">
+      <h2>Quieres volver a jugar? <span>SI</span>/<span>NO</span></h2> -->
+   </div>
    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd-min.js"></script>
-   <script src="sample.js"></script>
-   <!-- <script src="./js/functions.js"></script>
-   <script src="./js/blackjack.js"></script> -->
+   <script src="backjack.js"></script>
 </body>
-
 </html>

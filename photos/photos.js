@@ -17,8 +17,8 @@ photos.addEventListener('click', () => {
          if(check.checked) {
             photos.src = url;
          }
-         background.scrollTop = '99999';
-         allPhotos.innerHTML += `<img src="${url}" class="photosSmall" onclick="cambio('${url}') " title="${url}" ondblclick="visitar('${url}')"></img>`;
+         // background.scrollTop = '99999';
+         allPhotos.innerHTML = `<img src="${url}" class="photosSmall" onclick="cambio('${url}') " title="${url}" ondblclick="visitar('${url}')"></img>` + allPhotos.innerHTML;
       }, 1500);
    } else {
       clearInterval(changePhotos);
