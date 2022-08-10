@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  background: url("./images/bg-desktop-light.jpg") no-repeat;
+  background-size: contain;
+  font-family: 'Josefin Sans', sans-serif;
+}
+h1 {
+  margin: 0;
+}
+.container {
+  width: 500px;
+  min-height: 500px;
+  margin: 100px auto;
+}
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.row-title {
+  justify-content: space-between;
+  color: white;
+}
+.row h1 {
+  letter-spacing: 10px;
+  font-weight: 500;
+}
+.row img {
+  width: 25px;
+  height: 25px;
+}
+.row-new-todo {
+  background: white;
+  color: rgb(181, 180, 180);
+  padding-right: 10px;
+  border-radius: 5px;
+  margin: 30px 0px;
+  font-size: 0.9rem;
+
+}
+#new-todo {
+  border: none;
+  outline: none;
+  width: 55%;
+  font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.new-text{
+  color: black;
+}
+.row-content {
+    /* background: white; */
+    border-radius: 5px;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.206);
+}
+
+p, label{
+    margin: 16px 10px;
+    z-index: 90;
+}
+.item-completed{
+  color: rgb(181, 180, 180);
+  text-decoration: line-through;
+}
+.row-checkbox, .new-input {
+    appearance: none;
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+}
+.row-todo:hover{
+  background-color: rgba(213, 213, 213, 0.297);
+  cursor: pointer;
+}
+.row-checkbox:hover{
+  cursor: pointer;
+  border-radius:50%;
+  border:2px solid transparent;
+  background:linear-gradient(126deg,rgba(0,212,255,1) 0%, rgb(211, 75, 228) 100%) border-box ;
+  -webkit-mask:
+     linear-gradient(#fff 0 0) padding-box,
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+label:hover{
+  cursor: pointer;
+}
+.new-checkbox {
+  border: 1px solid rgba(171, 171, 171, 0.537);
+}
+.row-input, .row-checkbox:checked{
+    background: linear-gradient(126deg,rgba(0,212,255,1) 0%, rgb(211, 75, 228) 100%) border-box;
+}
+.separador{
+  border-top: 1px solid rgba(128, 128, 128, 0.489);
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgb(181, 180, 180);
+  padding: 0px 10px;
+}
+.footer__all:hover,
+.footer__active:hover,
+.footer__completed:hover,
+.footer__clear-completed:hover {
+  color: gray;
+  cursor: pointer;
+}
+.item-status{
+  display: flex;
+}
+.drag-hover{
+  background-color: rgb(175, 133, 247);
+}
